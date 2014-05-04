@@ -1,6 +1,6 @@
 <project name="JavaUtils" default="compile" basedir=".">
     <description>
-        Build file for Java utils
+        Build file for quiz
     </description>
 	<!-- set global properties for this build -->
 	<property name="src.dir" location="src"/>
