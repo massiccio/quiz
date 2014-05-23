@@ -33,7 +33,7 @@ public class Power {
 	if (exp == 0) {
 	    return 1;
 	}
-	if (exp % 2 == 0) {
+	if ((exp & (exp - 1)) == 0) { // power of 2
 	    final long val = power(base, exp >>> 1);
 	    return val * val;
 	}
