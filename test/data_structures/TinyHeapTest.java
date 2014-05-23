@@ -2,9 +2,6 @@ package data_structures;
 
 import static org.junit.Assert.*;
 
-import java.security.SecureRandom;
-import java.util.Random;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
