@@ -43,7 +43,7 @@
 	<jvmarg value="-XX:+UseStringCache"/>
 	<jvmarg value="-Xnoclassgc"/>
 	<jvmarg value="-XX:+UseNUMA"/>
-    	<jvmarg value="-XX:+HeapDumpOnOutOfMemoryError"/>
+    <!-- <jvmarg value="-XX:+HeapDumpOnOutOfMemoryError"/>-->
         <classpath>
           <path refid="classpath.test" />
           <pathelement location="${test.build.dir}"/>
