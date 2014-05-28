@@ -83,8 +83,8 @@ public class Power {
             final long val = power(base, exp >>> 1);
             return val * val;
         }
-        final long val = power(base, exp >>> 1);
-        return base * val * val;
+        final long val = power(base, exp - 1);
+        return base * val;
     }
 
 
@@ -102,12 +102,13 @@ public class Power {
             // expected
         }
 
-        pow = 3;
+        base = 3;
+        pow = 6;
         long res = power(base, pow);
 
         System.out.println(res);
 
-        System.out.println(ceilingLog2(0));
+//        System.out.println(ceilingLog2(0));
     }
 
 }

@@ -110,16 +110,18 @@ public class PowerTest {
      */
     @Test
     public final void testPower() {
-        int base = 3;
-        int exp = 2;
-        assertEquals(9, power(base, exp));
-
-        base = 2;
-        exp = 3;
-        assertEquals(8, power(base, exp));
+        assertEquals(9, power(3, 2));
+        assertEquals(9, power(-3, 2));
+        assertEquals(8, power(2, 3));
+        assertEquals(-8, power(-2, 3));
         
-        base = -2;
-        assertEquals(-8, power(base, exp));
+        assertEquals(729, power(3, 6));
+        assertEquals(216, power(6, 3));
+        assertEquals(10, power(10, 1));
+        assertEquals(1, power(10, 0));
+        assertEquals(10000000000L, power(10, 10));
+        assertEquals(256, power(2, 8));
+        assertEquals(27, power(3, 3));
     }
 
 }
